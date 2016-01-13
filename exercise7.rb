@@ -17,6 +17,11 @@ students = {
   students[num] = (value * 1.05).round
 end
   students.delete(:cohort2)
+  sum = 0
+  students.each do |num, value|
+    sum += value
+end
   cohorts(students)
 
   puts "#{students.keys}"
+  puts "#{sum} total students"
