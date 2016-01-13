@@ -9,7 +9,7 @@ end
   grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
   grocery_list << "rice"
   puts "added rice"
-  write_list(grocery_list)
+  write_list(grocery_list.sort)
 
   puts "#{grocery_list.length}"
 
@@ -20,3 +20,5 @@ else
   puts "You don't need to pick up bananas today."
 
 end
+
+puts "The second item on the list is #{ grocery_list[1] }"
