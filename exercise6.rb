@@ -22,3 +22,6 @@ else
 end
 
 puts "The second item on the list is #{ grocery_list[1] }"
+grocery_list.delete("salmon")
+puts "I can't find the salmon, here's the new list: "
+write_list(grocery_list)
